@@ -28,4 +28,8 @@ public class Dictionary {
         .map((entry) -> new Werb(entry.getKey(), entry.getValue()))
         .collect(Collectors.toSet());
   }
+
+  public void clear() {
+    records.clear();
+  }
 }
