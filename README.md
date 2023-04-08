@@ -1,0 +1,2 @@
+## Stažení dokumentů z prvního cvičení
+Dokumenty získané Crawlerem v prvním cvičení lze stáhnout na disku [zde](https://drive.google.com/drive/folders/10kDQswpslNXRUA-G2TQuS1v6jClW4ZDc?usp=sharing). Program očekává souboru v adresáři `storage` na stejné úrovni jako je spustitelný `.jar` soubor.

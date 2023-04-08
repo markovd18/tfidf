@@ -2,23 +2,25 @@ package cz.zcu.kiv.nlp.ir.index;
 
 public class QueryResult implements Comparable<QueryResult> {
   private final double score;
-  private final int documentId;
+  private final Document document;
 
-  public QueryResult(final double score, final int documentId) {
+  public QueryResult(final double score, final Document document) {
     this.score = score;
-    this.documentId = documentId;
+    this.document = document;
   }
 
   public double getScore() {
     return score;
   }
 
-  public int getDocumentId() {
-    return documentId;
+  public Document getDocument() {
+    return document;
   }
 
   @Override
   public int compareTo(final QueryResult other) {
+    // comparing algorithm is intentionally interchanged since java's PriorityQueue
+    // implementation stores the "smallest" elements as first
     return score < other.score ? 1 : score > other.score ? -1 : 0;
   }
 
